@@ -1,0 +1,98 @@
+@import "./css/normalize.css";
+@import "./css/footer.css";
+@import "./css/videos.css";
+@import "./css/trainers.css";
+@import "./css/tooltip.css";
+@import "./css/new_video.css";
+@import "./css/form.css";
+
+h2{
+    font-size: 4em;
+    letter-spacing: 0.2em;
+
+    text-align:right;
+
+    max-width: 80%;
+    width: max-content;
+
+    margin: auto;
+
+    margin-top: 2em;
+    margin-bottom: 1em;
+
+    position: relative;
+}
+
+h2:before {
+    background-color: var(--green);
+    content: '';
+    display: block;
+
+    height: 0.05em;
+    width: 3em;
+    margin-bottom: 0.3em;
+
+    position:absolute; right:0; top:0;
+
+}
+
+h2:after {
+    background-color: var(--green);
+    content: '';
+    display: block;
+    /* position:absolute; right:0; bottom:0; */
+    
+    height: 0.05em;
+    width: 3em;
+    margin-top:  0.5em;
+}
+
+
+/* NAVIGATION BAR */
+
+.navigation-bar{ 
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    padding: 1em 0;
+}
+
+.logo{
+    color: var(--main-text-color);
+    font-size: 3em;
+    letter-spacing: 0.3em;
+}
+
+nav{
+    margin-left: auto; 
+}
+
+nav ul li
+{
+    display: inline-flex;
+    padding: 1em;
+} 
+
+
+/* SCROLL TO TOP */
+
+.scroll-container{
+    position: absolute;
+    top: 0;
+    right: 2em;
+    height: 100%;
+}
+
+.scroll-container::before{
+    content: "";
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.scroll-container a {
+    position: sticky;
+    top: 95vh;
+    cursor: pointer;
+}

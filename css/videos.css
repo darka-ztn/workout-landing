@@ -1,0 +1,27 @@
+.videos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video{
+   transition: .2s ;
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.video:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+.video> p {
+    font-size: 2em;
+    margin-bottom: 0em;
+    margin-left: 0.5em;
+    text-shadow:  1px 1px  2px black;    
+    position: absolute;
+    bottom: -15px;
+    backdrop-filter: blur(1px) saturate(50%);
+}
